@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import countryCodes from "../../../countrycodes.json"; 
 import React, { useContext, useState } from 'react';
 import { useFormik } from 'formik';
-import logo from "../../../public/logo.webp"
+import logo from "../../../public/logo.png"
 import axios from 'axios';
 import * as yup from 'yup';
 import { BallTriangle } from 'react-loader-spinner';
@@ -146,7 +146,7 @@ const getDeviceId = () => {
       <div className="flex flex-col items-center gap-2 py-8">
         <img src={logo} className="w-28" alt="" />
         <h1 className="text-4xl font-semibold text-white"> 
-          <span className='text-5xl font-extrabold text-white'>ALEX</span>-MedLearn
+          <span className='text-5xl font-extrabold text-white'>Medic</span>-Learn
         </h1>
         <h2 className="font-extrabold text-2xl text-blue-500">Please Sign Up</h2>
       </div>

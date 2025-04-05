@@ -5,12 +5,12 @@ export default function Welcome() {
     <div className='text-center m-10 mt-32 flex-col items-center justify-center p-10 bg-gray-100 dark:bg-gray-800 shadow-lg shadow-gray-400 dark:shadow-gray-700 text-gray-900 dark:text-white transition-colors duration-300'>
       <h1 className='font-bold text-3xl'>👋 Hello Subscriber,</h1>
       <p className='text-lg'>
-        If you face any issues on <span className='font-semibold text-xl'>ALEX-MedLearn</span>, let us know via a video on WhatsApp 📱. 
+        If you face any issues on <span className='font-semibold text-xl'>Medic-Learn</span>, let us know via a video on WhatsApp 📱. 
         We're ready to help through Google Meet or TeamViewer. 🗓️
       </p>
       <h3 className='py-4 text-lg font-semibold'>Thank you for supporting us. 😊</h3>
       <h4>Best regards,</h4>
-      <h5>The <span className='font-semibold text-xl'>ALEX-MedLearn</span> Team</h5>
+      <h5>The <span className='font-semibold text-xl'>Medic-Learn</span> Team</h5>
     </div>
   )
 }

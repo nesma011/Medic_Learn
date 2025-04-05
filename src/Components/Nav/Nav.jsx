@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from "../../../public/logo.webp";
+import logo from "../../../public/logo.png";
 import { NavLink } from 'react-router-dom';
 
 export default function Nav({ hasSidebar = false }) {
@@ -22,8 +22,8 @@ export default function Nav({ hasSidebar = false }) {
       <NavLink to="/classes" className="flex justify-center items-center gap-2">
         <img src={logo} className="w-16 ms-16" alt="Logo" />
         <h1 className="text-3xl font-semibold text-blue-600">
-          <span className="text-3xl font-extrabold text-blue-600">ALEX</span>
-          -MedLearn
+          <span className="text-3xl font-extrabold text-blue-600">Medic</span>
+          -Learn
         </h1>
       </NavLink>
 

@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from "../../../public/logo.webp";
+import logo from "../../../public/logo.png";
 import { userContext } from "../../Context/UserContext";
 
 export default function Navbar() {
@@ -63,7 +63,7 @@ export default function Navbar() {
         <NavLink to="/" className="flex items-center gap-2">
           <img src={logo} className="w-10" alt="Logo" />
           <h1 className="text-2xl font-semibold text-blue-600">
-            <span className="text-3xl font-extrabold text-blue-600">ALEX</span>-MedLearn
+            <span className="text-3xl font-extrabold text-blue-600">Medic</span>-Learn
           </h1>
         </NavLink>
 

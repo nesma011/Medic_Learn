@@ -7,7 +7,7 @@ import {
   FiRefreshCw,
   FiUserPlus,
 } from 'react-icons/fi';
-import logo from "../../../public/logo.webp";
+import logo from "../../../public/logo.png";
 import Darkmode from '../../Darkmode';
 import  { useReferFriendModal } from  "../../Context/ReferContext"; 
 
@@ -45,7 +45,7 @@ export default function Sidebar() {
           <NavLink to="/classes" className="flex-col justify-center items-center gap-2">
             <img src={logo} className="w-28 ms-16" alt="Logo" />
             <h1 className="text-3xl font-semibold text-blue-600">
-              <span className="text-3xl font-extrabold text-blue-600">ALEX</span>-MedLearn
+              <span className="text-3xl font-extrabold text-blue-600">Medic</span>-Learn
             </h1>
           </NavLink>
 

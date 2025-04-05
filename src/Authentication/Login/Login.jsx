@@ -5,7 +5,7 @@ import * as yup from 'yup';
 import { BallTriangle } from 'react-loader-spinner';
 import { userContext } from '../../Context/UserContext';
 import { NavLink } from "react-router-dom";
-import logo from "../../../public/logo.webp"
+import logo from "../../../public/logo.png"
 import { toast } from 'react-toastify';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
@@ -132,7 +132,7 @@ return (
         <img src={logo} className="w-28" alt="" />
 
         <h1 className="text-3xl sm:text-4xl font-semibold text-white text-center">
-          <span className="text-4xl sm:text-5xl font-extrabold text-white">ALEX</span>-MedLearn
+          <span className="text-4xl sm:text-5xl font-extrabold text-white">Medic</span>-Learn
         </h1>
         <h2 className="font-extrabold text-xl sm:text-2xl text-blue-500">Please Log In</h2>
       </div>
