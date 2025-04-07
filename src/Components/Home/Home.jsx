@@ -31,7 +31,7 @@ const Home = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-green-600 via-green-400 to-green-200">
+      <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-green-800 via-green-500 to-green-200">
         <div className="absolute inset-0 " />
         <div className="relative z-10 text-center">
           <h1 className="text-7xl font-bold text-white mb-6">
