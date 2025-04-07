@@ -28,7 +28,7 @@ const ErrorBoundary = ({children}) => {
           <p className="mb-4">Please Wait for getting Data or Reload Page</p>
           <button 
             onClick={() => window.location.reload()} 
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
           >
                   Reload Page          </button>
         </div>
@@ -687,7 +687,7 @@ const subtitleCountKey = showHighYield
 
             {isLoading ? (
               <div className="text-center py-8">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-500 mx-auto"></div>
                 <p className="mt-4">Loading...</p>
               </div>
             ) : error ? (
@@ -796,7 +796,7 @@ const subtitleCountKey = showHighYield
                           {system.status === "paid" && system.open_user !== true && (                            <button
                               onClick={() => handleRequest(system.id)}
                               disabled={system.open_user === "waiting" || systemRequests[system.id] === "pending"}
-                              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
+                              className="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition duration-300"
                             >
                               {system.open_user === "waiting" || systemRequests[system.id] === "pending" ? "Pending" : "Request"}
                             </button>
@@ -805,7 +805,7 @@ const subtitleCountKey = showHighYield
                           
                             <button
                               onClick={() => toggleSubtitles(system.id)}
-                              className="text-blue-500 mt-4"
+                              className="text-green-500 mt-4"
                             >
                               {openSystems[system.id] ? (
                                 <FiMinusCircle size={20} />
@@ -870,7 +870,7 @@ const subtitleCountKey = showHighYield
       className={`md:ms-80 ms-20 rounded-lg font-medium px-6 py-3 border transition duration-300 ${
         selectedSubjects.length === 0 || selectedSystems.length === 0 || !questionCount
           ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-          : "hover:bg-blue-700 hover:text-white bg-transparent border-blue-500 text-blue-500"
+          : "hover:bg-green-700 hover:text-white bg-transparent border-green-500 text-green-500"
       }`}
       onClick={handleCreateTest}
     >

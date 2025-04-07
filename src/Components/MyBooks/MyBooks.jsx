@@ -35,7 +35,7 @@ export default function Books() {
       <Nav />
       <Welcome />
       <div className="p-6 text-center">
-        <h1 className="text-3xl font-bold text-blue-800">My Books</h1>
+        <h1 className="text-3xl font-bold text-green-800">My Books</h1>
         {loading ? (
           <p className="text-gray-700 mt-2">Loading...</p>
         ) : books.length > 0 ? (
@@ -43,7 +43,7 @@ export default function Books() {
             {books.map((book) => (
               <div key={book.book__id} className="bg-white shadow-md rounded-lg p-4">
                 <img src={book.book__image} alt={book.book__title} className="w-full h-48 object-cover rounded-md" />
-                <h2 className="text-xl font-semibold text-blue-700 mt-3">{book.book__title}</h2>
+                <h2 className="text-xl font-semibold text-green-700 mt-3">{book.book__title}</h2>
                 <p className="text-gray-600 mt-1">Author: {book.book__author}</p>
                 <p className="text-gray-600 mt-1">System: {book.book__System__name}</p>
                 <p className="text-gray-600 mt-1">University: {book.book__university}</p>

@@ -59,7 +59,7 @@ export default function Displayflashcards() {
   }, []);
 
   return (
-    <div className="flex md:ms-72 min-h-screen bg-gradient-to-r from-blue-200 to-purple-100 dark:from-gray-800 dark:to-gray-900">
+    <div className="flex md:ms-72 min-h-screen bg-gradient-to-r from-green-200 to-purple-100 dark:from-gray-800 dark:to-gray-900">
       <Sidebar />
       <main className="flex-1 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <h1 className="text-4xl font-extrabold mb-8 text-center">
@@ -95,7 +95,7 @@ export default function Displayflashcards() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow"
+                    className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg shadow"
                     onClick={() => setSelectedFlashcard(flashcard)}
                   >
                     Show Card
@@ -138,7 +138,7 @@ export default function Displayflashcards() {
               </p>
             </div>
             <button
-              className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow"
+              className="mt-4 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg shadow"
               onClick={() => setSelectedFlashcard(null)}
             >
               Close

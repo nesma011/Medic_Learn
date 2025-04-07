@@ -21,8 +21,8 @@ export default function Nav({ hasSidebar = false }) {
   >
       <NavLink to="/classes" className="flex justify-center items-center gap-2">
         <img src={logo} className="w-16 ms-16" alt="Logo" />
-        <h1 className="text-3xl font-semibold text-blue-600">
-          <span className="text-3xl font-extrabold text-blue-600">Medic</span>
+        <h1 className="text-3xl font-semibold text-green-600">
+          <span className="text-3xl font-extrabold text-green-600">Medic</span>
           -Learn
         </h1>
       </NavLink>
@@ -30,7 +30,7 @@ export default function Nav({ hasSidebar = false }) {
       {userData && (
         <div className="flex items-center gap-4 text-end me-4">
           <div className="text-left">
-            <p className="font-semibold text-blue-700 text-lg">
+            <p className="font-semibold text-green-700 text-lg">
               {userData.username}
             </p>
             <p className="text-gray-600 text-sm">
@@ -44,7 +44,7 @@ export default function Nav({ hasSidebar = false }) {
         <div className="inline-flex items-center overflow-hidden rounded-md border bg-white">
           <button
             type="button"
-            className="border-e px-4 py-2 text-2xl text-blue-700 hover:bg-gray-50 hover:text-gray-700"
+            className="border-e px-4 py-2 text-2xl text-green-700 hover:bg-gray-50 hover:text-gray-700"
           >
             <i className="fa-solid fa-user text-4xl"></i>
           </button>

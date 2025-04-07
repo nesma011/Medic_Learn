@@ -54,18 +54,18 @@ const Systems = () => {
 
       
     {loading ? (
-        <p className="text-center mt-32 text-xl font-semibold text-blue-700">Loading systems...</p>
+        <p className="text-center mt-32 text-xl font-semibold text-green-700">Loading systems...</p>
       ) : error ? (
         <p className="text-center mt-32 text-xl font-semibold text-red-600">{error}</p>
       ) : (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-blue-500 p-6">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-100 to-green-500 p-6">
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg text-center mb-8"
           >
-            <h2 className="text-3xl font-bold text-blue-700">📚 Choose Your System</h2>
+            <h2 className="text-3xl font-bold text-green-700">📚 Choose Your System</h2>
           </motion.div>
 
           <motion.div
@@ -79,7 +79,7 @@ const Systems = () => {
                 systems.map((system) => (
                   <motion.div
                     key={system.id}
-                    className="p-8 rounded-xl cursor-pointer transition-all shadow-md text-xl font-semibold flex flex-col items-center bg-gray-100 text-gray-700 hover:bg-blue-300 hover:text-white"
+                    className="p-8 rounded-xl cursor-pointer transition-all shadow-md text-xl font-semibold flex flex-col items-center bg-gray-100 text-gray-700 hover:bg-green-300 hover:text-white"
                    onClick={() => navigate(`/systems/${yearId}/${resourceId}/${system.id}`)}
                     whileTap={{ scale: 0.9 }}
                   >

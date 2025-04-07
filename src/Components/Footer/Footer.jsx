@@ -11,8 +11,8 @@ export default function Footer() {
           {/* Logo Section */}
           <div className="flex items-center gap-2">
             <img src={logo} className="w-16" alt="MedLearn Logo" />
-            <h1 className="text-2xl font-semibold text-blue-600"> 
-              <span className='text-3xl font-extrabold text-blue-600'>Medic</span>-Learn
+            <h1 className="text-2xl font-semibold text-green-600"> 
+              <span className='text-3xl font-extrabold text-green-600'>Medic</span>-Learn
             </h1>
           </div>
 
@@ -25,20 +25,20 @@ export default function Footer() {
 
           {/* Social Media Icons */}
           <ul className="flex items-center justify-center gap-5 flex-wrap">
-          <li> <NavLink to="https://www.facebook.com/share/18aNvC8sCJ/"><i class="fa-brands fa-facebook text-blue-700 text-2xl"></i></NavLink> </li>
-          <li className="flex items-center gap-2 hover:text-blue-800 transition-colors">
-      <i className="fa-solid fa-envelope text-blue-700 text-sm"></i>
+          <li> <NavLink to="https://www.facebook.com/share/18aNvC8sCJ/"><i class="fa-brands fa-facebook text-green-700 text-2xl"></i></NavLink> </li>
+          <li className="flex items-center gap-2 hover:text-green-800 transition-colors">
+      <i className="fa-solid fa-envelope text-green-700 text-sm"></i>
       <a 
         href="mailto:mediclearn20@gmail.com"
         className="hover:underline"
       >
         mediclearn20@gmail.com
       </a>
-    </li>          <li><i class="fa-solid fa-phone text-blue-700 text-sm px-1"></i> +20125487965</li>
-          <li> <NavLink to="https://t.me/ddfffgry"><i class="fa-brands fa-telegram text-blue-700 text-2xl"></i></NavLink> </li>
+    </li>          <li><i class="fa-solid fa-phone text-green-700 text-sm px-1"></i> +20125487965</li>
+          <li> <NavLink to="https://t.me/ddfffgry"><i class="fa-brands fa-telegram text-green-700 text-2xl"></i></NavLink> </li>
 
-          <li className="flex items-center gap-2 hover:text-blue-800 transition-colors">
-      <i className="fa-solid fa-envelope text-blue-700 text-sm"></i>
+          <li className="flex items-center gap-2 hover:text-green-800 transition-colors">
+      <i className="fa-solid fa-envelope text-green-700 text-sm"></i>
       <a 
         href="mailto:mediclearn420@gmail.com"
         className="hover:underline"

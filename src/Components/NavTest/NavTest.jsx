@@ -30,14 +30,14 @@ const NavTest = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <nav className="bg-gradient-to-r from-blue-600 to-blue-400 shadow-lg">
+      <nav className="bg-gradient-to-r from-green-600 to-green-400 shadow-lg">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex space-x-4">
               <button
                 onClick={() => handleComponentClick('notes')}
-                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500 ${
-                  activeComponent === 'notes' ? 'bg-blue-700' : ''
+                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500 ${
+                  activeComponent === 'notes' ? 'bg-green-700' : ''
                 }`}
               >
                 📝 Add Note
@@ -45,8 +45,8 @@ const NavTest = () => {
 
               <button
                 onClick={() => handleComponentClick('flashcards')}
-                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500 ${
-                  activeComponent === 'flashcards' ? 'bg-blue-700' : ''
+                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500 ${
+                  activeComponent === 'flashcards' ? 'bg-green-700' : ''
                 }`}
               >
                 🗂️ Flashcards
@@ -54,8 +54,8 @@ const NavTest = () => {
 
               <button
                 onClick={toggleHighlight}
-                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500 ${
-                  highlight ? 'bg-blue-700' : ''
+                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500 ${
+                  highlight ? 'bg-green-700' : ''
                 }`}
               >
                 ✨ Highlight {highlight ? "ON" : "OFF"}
@@ -63,8 +63,8 @@ const NavTest = () => {
 
               <button
                 onClick={() => handleComponentClick('calculator')}
-                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500 ${
-                  activeComponent === 'calculator' ? 'bg-blue-700' : ''
+                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500 ${
+                  activeComponent === 'calculator' ? 'bg-green-700' : ''
                 }`}
               >
                 🔢 Calculator
@@ -72,8 +72,8 @@ const NavTest = () => {
 
               <button
                 onClick={() => handleComponentClick('labvalues')}
-                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500 ${
-                  activeComponent === 'labvalues' ? 'bg-blue-700' : ''
+                className={`flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500 ${
+                  activeComponent === 'labvalues' ? 'bg-green-700' : ''
                 }`}
               >
                 🧪 Lab Values
@@ -83,7 +83,7 @@ const NavTest = () => {
             <div className="relative">
               <button
                 onClick={() => handleComponentClick("settings")}
-                className="flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500"
+                className="flex items-center px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500"
               >
                 ⚙️ More
               </button>
@@ -102,7 +102,7 @@ const NavTest = () => {
                           max="150"
                           value={zoom}
                           onChange={adjustZoom}
-                          className="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                          className="w-full h-2 bg-green-200 rounded-lg appearance-none cursor-pointer"
                         />
                         <span className="text-sm text-gray-600 min-w-[4rem]">
                           {zoom}%
@@ -112,7 +112,7 @@ const NavTest = () => {
                     <div>
                       <button
                         onClick={toggleHighlight}
-                        className="w-full px-4 py-2 text-sm text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors"
+                        className="w-full px-4 py-2 text-sm text-white bg-green-500 rounded-lg hover:bg-green-600 transition-colors"
                       >
                         Highlighting {highlight ? "Enabled" : "Disabled"}
                       </button>
@@ -131,7 +131,7 @@ const NavTest = () => {
             <Notes onClose={() => setActiveComponent(null)} />
             <button
               onClick={() => setActiveComponent(null)}
-              className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+              className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
             >
               Close
             </button>
@@ -145,7 +145,7 @@ const NavTest = () => {
             <Flashcards />
             <button
               onClick={() => setActiveComponent(null)}
-              className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+              className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
             >
               Close
             </button>

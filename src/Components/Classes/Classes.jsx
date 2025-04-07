@@ -51,14 +51,14 @@ export default function Classes() {
 </div>
 
 
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-blue-500 p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-100 to-green-500 p-6">
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg text-center mb-8"
     >
-      <h2 className="text-3xl font-bold text-blue-700">
+      <h2 className="text-3xl font-bold text-green-700">
         📚 Choose Your Academic Year
       </h2>
     </motion.div>
@@ -78,8 +78,8 @@ export default function Classes() {
             key={year.id}
             className={`p-6 rounded-xl cursor-pointer transition-all shadow-md text-xl font-semibold ${
               selectedYear === year.id
-                ? "bg-blue-500 text-white"
-                : "bg-gray-100 text-gray-700 hover:bg-blue-300 hover:text-white"
+                ? "bg-green-500 text-white"
+                : "bg-gray-100 text-gray-700 hover:bg-green-300 hover:text-white"
             }`}
             onClick={() => navigate(`/resources/${year.id}`)} 
                         whileTap={{ scale: 0.9 }}
@@ -94,10 +94,10 @@ export default function Classes() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3 }}
-          className="bg-blue-100 p-4 mt-6 rounded-xl shadow-md text-lg font-semibold text-blue-700"
+          className="bg-green-100 p-4 mt-6 rounded-xl shadow-md text-lg font-semibold text-green-700"
         >
           ✅ Chosen{" "}
-          <span className="text-blue-900">
+          <span className="text-green-900">
             {years.find((year) => year.id === selectedYear)?.name}
           </span>
         </motion.div>

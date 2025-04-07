@@ -56,7 +56,7 @@ export default function DisplayNotes() {
   }, []);
 
   return (
-    <div className="flex md:ms-72 min-h-screen bg-gradient-to-r from-blue-200 to-purple-100 dark:from-gray-800 dark:to-gray-900">
+    <div className="flex md:ms-72 min-h-screen bg-gradient-to-r from-green-200 to-purple-100 dark:from-gray-800 dark:to-gray-900">
       <Sidebar />
       <main className="flex-1 p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <h1 className="text-4xl font-extrabold mb-8 text-center">

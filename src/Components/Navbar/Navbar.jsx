@@ -58,12 +58,12 @@ export default function Navbar() {
   const navItems = isTokenValid() ? ["Home", "Classes", "Contact"] : ["Home", "Contact"];
 
   return (
-    <nav className="bg-gray-100 shadow-lg shadow-blue-200 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-gray-100 shadow-lg shadow-green-200 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-2">
         <NavLink to="/" className="flex items-center gap-2">
           <img src={logo} className="w-10" alt="Logo" />
-          <h1 className="text-2xl font-semibold text-blue-600">
-            <span className="text-3xl font-extrabold text-blue-600">Medic</span>-Learn
+          <h1 className="text-2xl font-semibold text-green-600">
+            <span className="text-3xl font-extrabold text-green-600">Medic</span>-Learn
           </h1>
         </NavLink>
 
@@ -75,8 +75,8 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `text-xl font-medium transition-all duration-300 ${
                   isActive
-                    ? "text-blue-700 border-b-2 border-blue-700"
-                    : "text-gray-900 dark:text-white hover:text-blue-800"
+                    ? "text-green-700 border-b-2 border-green-700"
+                    : "text-gray-900 dark:text-white hover:text-green-800"
                 }`
               }
             >
@@ -87,7 +87,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-3xl text-blue-700 dark:text-white"
+          className="md:hidden text-3xl text-green-700 dark:text-white"
         >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
@@ -100,8 +100,8 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `px-5 py-2 border-2 rounded transition-all duration-300 ${
                     isActive
-                      ? "bg-blue-700 text-white border-blue-700"
-                      : "bg-white text-blue-700 border-blue-300 hover:bg-blue-700 hover:text-white"
+                      ? "bg-green-700 text-white border-green-700"
+                      : "bg-white text-green-700 border-green-300 hover:bg-green-700 hover:text-white"
                   }`
                 }
               >
@@ -112,8 +112,8 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `px-5 py-2 border-2 rounded transition-all duration-300 ${
                     isActive
-                      ? "bg-blue-700 text-white border-blue-700"
-                      : "bg-blue-700 text-white hover:text-blue-700 hover:bg-white hover:border-blue-300"
+                      ? "bg-green-700 text-white border-green-700"
+                      : "bg-green-700 text-white hover:text-green-700 hover:bg-white hover:border-green-300"
                   }`
                 }
               >
@@ -138,7 +138,7 @@ export default function Navbar() {
               <li key={item}>
                 <NavLink
                   to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                  className="text-xl font-medium text-gray-900 hover:text-blue-800"
+                  className="text-xl font-medium text-gray-900 hover:text-green-800"
                 >
                   {item}
                 </NavLink>
@@ -149,7 +149,7 @@ export default function Navbar() {
                 <li>
                   <NavLink
                     to="/login"
-                    className="block w-full text-center py-2 border-2 border-blue-300 text-blue-700 bg-white hover:bg-blue-700 hover:text-white"
+                    className="block w-full text-center py-2 border-2 border-green-300 text-green-700 bg-white hover:bg-green-700 hover:text-white"
                   >
                     Login
                   </NavLink>
@@ -157,7 +157,7 @@ export default function Navbar() {
                 <li>
                   <NavLink
                     to="/register"
-                    className="block w-full text-center py-2 border-2 bg-blue-700 text-white hover:bg-white hover:text-blue-700 hover:border-blue-300"
+                    className="block w-full text-center py-2 border-2 bg-green-700 text-white hover:bg-white hover:text-green-700 hover:border-green-300"
                   >
                     SignUp
                   </NavLink>

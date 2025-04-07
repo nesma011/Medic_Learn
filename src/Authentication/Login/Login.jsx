@@ -134,7 +134,7 @@ return (
         <h1 className="text-3xl sm:text-4xl font-semibold text-white text-center">
           <span className="text-4xl sm:text-5xl font-extrabold text-white">Medic</span>-Learn
         </h1>
-        <h2 className="font-extrabold text-xl sm:text-2xl text-blue-500">Please Log In</h2>
+        <h2 className="font-extrabold text-xl sm:text-2xl text-green-500">Please Log In</h2>
       </div>
 
       <form
@@ -161,7 +161,7 @@ return (
             type="email"
             id="Email"
             name="email"
-            className="mt-2 w-full rounded-md border-2 py-2.5 sm:py-3 px-4 border-gray-900 focus:border-blue-500 focus:ring-2 bg-white text-base sm:text-lg text-gray-700 shadow-sm"
+            className="mt-2 w-full rounded-md border-2 py-2.5 sm:py-3 px-4 border-gray-900 focus:border-green-500 focus:ring-2 bg-white text-base sm:text-lg text-gray-700 shadow-sm"
           />
           {formicLogin.touched.email && formicLogin.errors.email && (
             <div className="text-sm text-red-500">{formicLogin.errors.email}</div>
@@ -179,28 +179,28 @@ return (
             type="password"
             id="Password"
             name="password"
-            className="mt-2 w-full rounded-md border-2 py-2.5 sm:py-3 px-4 border-gray-900 focus:border-blue-500 focus:ring-2 bg-white text-base sm:text-lg text-gray-700 shadow-sm"
+            className="mt-2 w-full rounded-md border-2 py-2.5 sm:py-3 px-4 border-gray-900 focus:border-green-500 focus:ring-2 bg-white text-base sm:text-lg text-gray-700 shadow-sm"
           />
           {formicLogin.touched.password && formicLogin.errors.password && (
             <div className="text-sm text-red-500">{formicLogin.errors.password}</div>
           )}
         </div>
 
-        <NavLink to="/forgotpass" className="text-blue-700 text-base sm:text-lg underline">
+        <NavLink to="/forgotpass" className="text-green-700 text-base sm:text-lg underline">
           Forgot your Password?
         </NavLink>
 
         <div className="flex flex-col items-center gap-4 mt-6">
           <button
             disabled={loading}
-            className="w-full rounded-md border border-blue-600 bg-blue-600 px-6 sm:px-12 py-2.5 sm:py-3 text-base sm:text-lg font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:ring-3"
+            className="w-full rounded-md border border-green-600 bg-green-600 px-6 sm:px-12 py-2.5 sm:py-3 text-base sm:text-lg font-medium text-white transition hover:bg-transparent hover:text-green-600 focus:ring-3"
           >
             Log In
           </button>
 
           <p className="text-base sm:text-lg text-gray-500">
             Don't have an account?
-            <NavLink to="/register" className="text-blue-700 px-2 underline">
+            <NavLink to="/register" className="text-green-700 px-2 underline">
               Register
             </NavLink>
           </p>

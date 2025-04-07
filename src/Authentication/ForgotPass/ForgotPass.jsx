@@ -63,7 +63,7 @@ export default function ForgotPass() {
             onSubmit={formik.handleSubmit} 
             className="mt-8 grid grid-cols-6 gap-6"
           >
-            <h1 className='col-span-6 text-center text-blue-800 text-3xl font-bold'>
+            <h1 className='col-span-6 text-center text-green-800 text-3xl font-bold'>
               Forgot Password
             </h1>
             <div className="col-span-6">
@@ -87,7 +87,7 @@ export default function ForgotPass() {
             </div>
             <button
               type="submit"
-              className="inline-block shrink-0 col-span-3 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:ring-3 focus:outline-hidden"
+              className="inline-block shrink-0 col-span-3 rounded-md border border-green-600 bg-green-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-green-600 focus:ring-3 focus:outline-hidden"
             >
               Continue
             </button>

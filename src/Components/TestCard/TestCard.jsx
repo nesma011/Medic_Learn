@@ -405,7 +405,7 @@ const TestCard = () => {
                           />
                           <button
                             onClick={() => handleNameEdit(test.id, newName)}
-                            className="text-blue-600 dark:text-blue-400"
+                            className="text-green-600 dark:text-green-400"
                           >
                             Save
                           </button>
@@ -436,7 +436,7 @@ const TestCard = () => {
                       </div>
                       <div>
                         <div className="text-amber-600 dark:text-amber-400">Unanswered: {test.content_test_unanswer || 0}</div>
-                        <div className="text-blue-600 dark:text-blue-400">
+                        <div className="text-green-600 dark:text-green-400">
                           Percentage: {test.count_question > 0 ? 
                             ((test.content_test_true / test.count_question) * 100).toFixed(0) : 0}%
                         </div>
@@ -454,7 +454,7 @@ const TestCard = () => {
                     )}
 
                     <div className="flex justify-center gap-2 mb-4">
-                      <button className="text-blue-600 dark:text-blue-400 flex items-center gap-1">
+                      <button className="text-green-600 dark:text-green-400 flex items-center gap-1">
                         <Share2 size={16} /> Share Test
                       </button>
                     </div>
@@ -477,14 +477,14 @@ const TestCard = () => {
                     {(test.content_test_unanswer || 0) === 0 ? (
                       <button
                         onClick={() => handleViewResults(test)}
-                        className="w-full flex items-center justify-center gap-1 text-blue-600 dark:text-blue-400 border dark:border-gray-600 rounded py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+                        className="w-full flex items-center justify-center gap-1 text-green-600 dark:text-green-400 border dark:border-gray-600 rounded py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
                       >
                         <Eye size={16} /> View Results
                       </button>
                     ) : (
                       <button
                         onClick={() => handleResume(test)}
-                        className="w-full flex items-center justify-center gap-1 text-blue-600 dark:text-blue-400 border dark:border-gray-600 rounded py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+                        className="w-full flex items-center justify-center gap-1 text-green-600 dark:text-green-400 border dark:border-gray-600 rounded py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
                       >
                         <PlayCircle size={16} /> Resume Test
                       </button>

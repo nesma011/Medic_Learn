@@ -137,7 +137,7 @@ export default function MarkedQuestion() {
   };
 
   return (
-    <div className="flex md:ms-72 min-h-screen bg-gradient-to-r from-blue-200 to-purple-100 dark:from-gray-800 dark:to-gray-900">
+    <div className="flex md:ms-72 min-h-screen bg-gradient-to-r from-green-200 to-purple-100 dark:from-gray-800 dark:to-gray-900">
       <Sidebar />
       <div className="p-4 w-full">
         {systemNames.map((systemName) => (
@@ -159,7 +159,7 @@ export default function MarkedQuestion() {
                     {marksBySystem[systemName].map((mark) => (
                       <div key={mark.id} className="border rounded-lg p-4">
                         <div className="font-bold text-xl mb-2">{mark.name}</div>
-                        <div className="text-blue-600 font-bold text-xl mb-1">
+                        <div className="text-green-600 font-bold text-xl mb-1">
                           #{mark.id}
                         </div>
                         <div className="text-gray-600 text-sm mb-3">
@@ -175,7 +175,7 @@ export default function MarkedQuestion() {
                           </div>
                           <div>
                             <span className="font-medium">Question</span>
-                            <div className="bg-blue-600 text-white rounded px-2 py-1 text-sm">
+                            <div className="bg-green-600 text-white rounded px-2 py-1 text-sm">
                               #{mark.question}
                             </div>
                           </div>
@@ -183,7 +183,7 @@ export default function MarkedQuestion() {
 
                         <button
                           onClick={() => navigateToQuestion(mark.test, mark.question)}
-                          className="bg-blue-100 text-blue-600 flex items-center justify-center w-full py-2 rounded"
+                          className="bg-green-100 text-green-600 flex items-center justify-center w-full py-2 rounded"
                         >
                           <span className="mr-2">▶</span> View Question
                         </button>

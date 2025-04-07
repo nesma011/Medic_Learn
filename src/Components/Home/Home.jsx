@@ -31,7 +31,7 @@ const Home = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-blue-600 via-blue-400 to-blue-200">
+      <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-green-600 via-green-400 to-green-200">
         <div className="absolute inset-0 " />
         <div className="relative z-10 text-center">
           <h1 className="text-7xl font-bold text-white mb-6">
@@ -62,8 +62,8 @@ const Home = () => {
               key={item.id}
               className="bg-white backdrop-blur-lg rounded-xl p-6 hover:transform hover:scale-105 transition-all duration-300"
             >
-              <div className="h-20 w-20 rounded-full bg-blue-500 mb-6" />
-              <h3 className="text-2xl font-bold text-blue-700 mb-4">{item.title}</h3>
+              <div className="h-20 w-20 rounded-full bg-green-500 mb-6" />
+              <h3 className="text-2xl font-bold text-green-700 mb-4">{item.title}</h3>
               <p className="text-gray-600">{formatText(item.content)}</p>
             </div>
           ))}
@@ -72,7 +72,7 @@ const Home = () => {
 
       {/* Key Features Section */}
       <div className="py-20 px-6 bg-white ">
-        <h2 className="text-6xl font-bold text-center text-blue-700 mb-16">
+        <h2 className="text-6xl font-bold text-center text-green-700 mb-16">
           Key Features
         </h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">

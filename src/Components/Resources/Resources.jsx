@@ -27,14 +27,14 @@ const Resources = () => {
 
 </div>
 
-<div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-blue-500 p-6">
+<div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-100 to-green-500 p-6">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg text-center mb-8"
       >
-        <h2 className="text-3xl font-bold text-blue-700">📚 Choose Your Resource</h2>
+        <h2 className="text-3xl font-bold text-green-700">📚 Choose Your Resource</h2>
       </motion.div>
 
       <motion.div
@@ -47,7 +47,7 @@ const Resources = () => {
         {resources.map((resource) => (
   <motion.div
     key={resource.id}
-    className="p-8 rounded-xl cursor-pointer transition-all shadow-md text-xl font-semibold flex flex-col items-center bg-gray-100 text-gray-700 hover:bg-blue-300 hover:text-white"
+    className="p-8 rounded-xl cursor-pointer transition-all shadow-md text-xl font-semibold flex flex-col items-center bg-gray-100 text-gray-700 hover:bg-green-300 hover:text-white"
     onClick={() => {
       if (resource.name === "Question Bank") {
         console.log("Navigating with yearId:", yearId);

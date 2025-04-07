@@ -53,13 +53,13 @@ const Profile = () => {
 
       <button
         onClick={toggleSidebar}
-        className="md:hidden fixed top-4 left-4 z-50 p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+        className="md:hidden fixed top-4 left-4 z-50 p-2 rounded-lg bg-green-500 text-white hover:bg-green-600 transition-colors"
       >
         {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
       <aside
-        className={`fixed top-0 left-0 h-full bg-gradient-to-b from-blue-400 to-blue-200 text-blue-600 p-6 shadow-lg
+        className={`fixed top-0 left-0 h-full bg-gradient-to-b from-green-400 to-green-200 text-green-600 p-6 shadow-lg
         transform transition-transform duration-300 ease-in-out z-40 w-64 md:translate-x-0
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >

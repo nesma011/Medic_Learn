@@ -74,7 +74,7 @@ const Alllectures = () => {
    </div>
    <div className="container mx-auto p-5">
      <motion.h2
-       className="text-3xl font-bold text-center mb-10 text-blue-600"
+       className="text-3xl font-bold text-center mb-10 text-green-600"
        initial={{ opacity: 0, y: -20 }}
        animate={{ opacity: 1, y: 0 }}
        transition={{ duration: 0.5 }}
@@ -109,7 +109,7 @@ const Alllectures = () => {
    
                <button
                  onClick={() => handleOrder(lecture.id)}
-                 className="mt-3 w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+                 className="mt-3 w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition"
                >
                  🛒 Request a Lecture
                </button>

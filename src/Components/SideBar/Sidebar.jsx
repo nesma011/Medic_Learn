@@ -34,7 +34,7 @@ export default function Sidebar() {
       <aside
         className={`
           fixed top-0 left-0 h-screen 
-          bg-gradient-to-b from-white to-blue-500 dark:from-gray-700 dark:to-gray-900 
+          bg-gradient-to-b from-white to-green-500 dark:from-gray-700 dark:to-gray-900 
           text-white overflow-y-auto transition-transform duration-300 z-40
           ${isOpen ? 'translate-x-0' : '-translate-x-full'} 
           md:translate-x-0 md:w-72 md:border-e
@@ -44,8 +44,8 @@ export default function Sidebar() {
           {/* Logo */}
           <NavLink to="/classes" className="flex-col justify-center items-center gap-2">
             <img src={logo} className="w-28 ms-16" alt="Logo" />
-            <h1 className="text-3xl font-semibold text-blue-600">
-              <span className="text-3xl font-extrabold text-blue-600">Medic</span>-Learn
+            <h1 className="text-3xl font-semibold text-green-600">
+              <span className="text-3xl font-extrabold text-green-600">Medic</span>-Learn
             </h1>
           </NavLink>
 
@@ -59,7 +59,7 @@ export default function Sidebar() {
                 end
                 className="flex items-center gap-3 rounded-lg bg-gray-100 px-4 py-2 text-xl font-bold text-gray-900"
               >
-                <FiHome className="text-blue-600" /> Dashboard
+                <FiHome className="text-green-600" /> Dashboard
               </NavLink>
             </li>
 

@@ -54,7 +54,7 @@ export default function QuestionBank() {
                   onClick={() => setActiveTab('home')}
                   className={`px-4 md:px-6 py-2 rounded-lg text-base md:text-lg font-semibold ${
                     activeTab === 'home'
-                      ? 'bg-blue-500 text-white'
+                      ? 'bg-green-500 text-white'
                       : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
                   }`}
                 >
@@ -65,7 +65,7 @@ export default function QuestionBank() {
                   onClick={() => setActiveTab('analytics')}
                   className={`px-4 md:px-6 py-2 rounded-lg text-base md:text-lg font-semibold ${
                     activeTab === 'analytics'
-                      ? 'bg-blue-500 text-white'
+                      ? 'bg-green-500 text-white'
                       : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
                   }`}
                 >
@@ -82,7 +82,7 @@ export default function QuestionBank() {
             {activeTab === 'home' && (
               <div className="flex flex-col lg:flex-row gap-4 mb-10">
                 {/* Social Media Section */}
-                <div className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 mx-4 md:mx-12 px-4 md:px-10 h-48 md:h-64 mt-8 md:mt-16 animate-gradient text-center p-4 rounded-lg shadow-lg">
+                <div className="bg-gradient-to-r from-green-400 via-green-500 to-purple-500 mx-4 md:mx-12 px-4 md:px-10 h-48 md:h-64 mt-8 md:mt-16 animate-gradient text-center p-4 rounded-lg shadow-lg">
                   <h2 className="text-black dark:text-white font-bold text-lg mb-3">
                     Follow Us For More Offers:
                   </h2>
@@ -107,7 +107,7 @@ export default function QuestionBank() {
                       updates.map((update, index) => (
                         <div
                           key={index}
-                          className="p-4 md:p-6 bg-white dark:bg-gray-800 rounded-lg border-4 border-blue-500 dark:border-purple-400 animate-border text-center relative"
+                          className="p-4 md:p-6 bg-white dark:bg-gray-800 rounded-lg border-4 border-green-500 dark:border-purple-400 animate-border text-center relative"
                         >
                           {update.text ? (
                             <div dangerouslySetInnerHTML={{ __html: update.text }} />

@@ -148,7 +148,7 @@ const getDeviceId = () => {
         <h1 className="text-4xl font-semibold text-white"> 
           <span className='text-5xl font-extrabold text-white'>Medic</span>-Learn
         </h1>
-        <h2 className="font-extrabold text-2xl text-blue-500">Please Sign Up</h2>
+        <h2 className="font-extrabold text-2xl text-green-500">Please Sign Up</h2>
       </div>
 
       <form 
@@ -172,7 +172,7 @@ const getDeviceId = () => {
             type="text"
             id="username"
             name="username"
-            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-blue-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
+            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-green-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
           />
           {formikRegister.touched.username && formikRegister.errors.username && (
             <div className="text-sm text-red-500">{formikRegister.errors.username}</div>
@@ -188,7 +188,7 @@ const getDeviceId = () => {
             type="email"
             id="email"
             name="email"
-            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-blue-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
+            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-green-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
           />
           {formikRegister.touched.email && formikRegister.errors.email && (
             <div className="text-sm text-red-500">{formikRegister.errors.email}</div>
@@ -199,7 +199,7 @@ const getDeviceId = () => {
           <label htmlFor="phone_number" className="block text-sm font-medium text-gray-700">Mobile</label>
            <div className='flex flex-col sm:flex-row gap-2'>
             <select
-              className="border-2 w-full sm:w-auto py-2 px-3 border-gray-900 rounded-lg bg-white text-gray-700 focus:ring-2 focus:ring-blue-400"
+              className="border-2 w-full sm:w-auto py-2 px-3 border-gray-900 rounded-lg bg-white text-gray-700 focus:ring-2 focus:ring-green-400"
               value={selectedCode}
               onChange={(e) => setSelectedCode(e.target.value)}
             >
@@ -212,7 +212,7 @@ const getDeviceId = () => {
 
             <input
               type="tel"
-              className="flex-1 px-3 border-2 py-2 border-gray-900 focus:border-blue-500 focus:ring-2 rounded-lg text-gray-700"
+              className="flex-1 px-3 border-2 py-2 border-gray-900 focus:border-green-500 focus:ring-2 rounded-lg text-gray-700"
               placeholder="Enter your phone number"
               name="phone_number"
               value={formikRegister.values.phone_number}
@@ -235,7 +235,7 @@ const getDeviceId = () => {
             type="password"
             id="password"
             name="password"
-            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-blue-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
+            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-green-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
           />
           {formikRegister.touched.password && formikRegister.errors.password && (
             <div className="text-sm text-red-500">{formikRegister.errors.password}</div>
@@ -250,7 +250,7 @@ const getDeviceId = () => {
             onBlur={formikRegister.handleBlur}
             id="country"
             name="country"
-            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-blue-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
+            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-green-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
           >
             <option value="">Select a country</option>
             {countryCodes.map((country) => (
@@ -273,7 +273,7 @@ const getDeviceId = () => {
             value={formikRegister.values.birth_date}
             onChange={formikRegister.handleChange}
             onBlur={formikRegister.handleBlur}
-            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-blue-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
+            className="mt-1 w-full rounded-md border-2 py-2 px-3 border-gray-900 focus:border-green-500 focus:ring-2 bg-white text-sm text-gray-700 shadow-xs"
           />
           {formikRegister.touched.birth_date && formikRegister.errors.birth_date && (
             <div className="text-sm text-red-500">{formikRegister.errors.birth_date}</div>
@@ -282,7 +282,7 @@ const getDeviceId = () => {
 
         <div className="my-4 sm:flex sm:items-center sm:gap-4">
           <button
-            className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:ring-3 focus:outline-hidden"
+            className="inline-block shrink-0 rounded-md border border-green-600 bg-green-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-green-600 focus:ring-3 focus:outline-hidden"
             disabled={loading} 
             type='submit'>
             Create an account
@@ -290,7 +290,7 @@ const getDeviceId = () => {
 
           <p className="mt-4 text-sm text-gray-500 sm:mt-0">
             Already have an account?
-            <NavLink to="/login" className="text-blue-700 px-3 underline">Log in</NavLink>.
+            <NavLink to="/login" className="text-green-700 px-3 underline">Log in</NavLink>.
           </p>
         </div>
 

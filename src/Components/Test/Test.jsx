@@ -666,14 +666,14 @@ export default function Test() {
       className="min-h-screen bg-gray-50 relative"
     >
       <div className="fixed inset-0 flex justify-center items-center pointer-events-none z-0">
-        <span className="text-[10rem] text-blue-300 font-bold opacity-20 rotate-[-30deg] select-none">
+        <span className="text-[10rem] text-green-300 font-bold opacity-20 rotate-[-30deg] select-none">
           Alex-MedLearn
         </span>
       </div>
 
       <div className="relative z-10">
         {/* Navbar */}
-        <nav className="bg-blue-800 w-full px-4 py-2 flex flex-col sm:flex-row sm:justify-between items-center">
+        <nav className="bg-green-800 w-full px-4 py-2 flex flex-col sm:flex-row sm:justify-between items-center">
           <div className="flex flex-col text-white mb-2 sm:mb-0">
             <span className="text-xl font-semibold">
               Item {currentQuestionIndex + 1} of {testData.questions?.length}
@@ -703,8 +703,8 @@ export default function Test() {
               onClick={() =>
                 setActiveComponent(activeComponent === 'notes' ? null : 'notes')
               }
-              className={`flex items-center text-lg font-semibold px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500 ${
-                activeComponent === 'notes' ? 'bg-blue-700' : ''
+              className={`flex items-center text-lg font-semibold px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500 ${
+                activeComponent === 'notes' ? 'bg-green-700' : ''
               }`}
             >
               📝 Add Note
@@ -715,8 +715,8 @@ export default function Test() {
                   activeComponent === 'flashcards' ? null : 'flashcards'
                 )
               }
-              className={`flex items-center text-lg font-semibold px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500 ${
-                activeComponent === 'flashcards' ? 'bg-blue-700' : ''
+              className={`flex items-center text-lg font-semibold px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500 ${
+                activeComponent === 'flashcards' ? 'bg-green-700' : ''
               }`}
             >
               🗂️ Flashcards
@@ -737,8 +737,8 @@ export default function Test() {
                   activeComponent === 'calculator' ? null : 'calculator'
                 )
               }
-              className={`flex items-center px-4 py-2 text-lg font-semibold text-white rounded-lg transition-all hover:bg-blue-500 ${
-                activeComponent === 'calculator' ? 'bg-blue-700' : ''
+              className={`flex items-center px-4 py-2 text-lg font-semibold text-white rounded-lg transition-all hover:bg-green-500 ${
+                activeComponent === 'calculator' ? 'bg-green-700' : ''
               }`}
             >
               🔢 Calculator
@@ -749,8 +749,8 @@ export default function Test() {
                   activeComponent === 'labvalues' ? null : 'labvalues'
                 )
               }
-              className={`flex items-center text-lg font-semibold px-4 py-2 text-white rounded-lg transition-all hover:bg-blue-500 ${
-                activeComponent === 'labvalues' ? 'bg-blue-700' : ''
+              className={`flex items-center text-lg font-semibold px-4 py-2 text-white rounded-lg transition-all hover:bg-green-500 ${
+                activeComponent === 'labvalues' ? 'bg-green-700' : ''
               }`}
             >
               🧪 Lab Values
@@ -771,7 +771,7 @@ export default function Test() {
         </nav>
 
         {/* Toolbar (Highlight, Colors, More Menu) */}
-        <div className="bg-blue-100 flex flex-wrap sm:flex-nowrap items-center justify-between px-4 py-2">
+        <div className="bg-green-100 flex flex-wrap sm:flex-nowrap items-center justify-between px-4 py-2">
           <div className="flex items-center space-x-4 mb-2 sm:mb-0">
             <div className="flex items-center">
               <label className="mr-2 font-semibold">Highlight</label>
@@ -801,7 +801,7 @@ export default function Test() {
           <div className="relative inline-block text-left">
             <button
               onClick={() => setShowMoreMenu(!showMoreMenu)}
-              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
             >
               More
             </button>
@@ -891,8 +891,8 @@ export default function Test() {
                             font-semibold text-lg transition-all
                             ${
                               currentQuestionIndex === index
-                                ? 'bg-blue-600 text-white'
-                                : 'bg-white text-gray-700 hover:bg-blue-100'
+                                ? 'bg-green-600 text-white'
+                                : 'bg-white text-gray-700 hover:bg-green-100'
                             }
                             ${
                               qResult
@@ -930,7 +930,7 @@ export default function Test() {
                         )}
 
                         {markedQuestions[question.id] && (
-                          <span className="ml-2 text-xl font-bold text-blue-500">
+                          <span className="ml-2 text-xl font-bold text-green-500">
                             🚩
                           </span>
                         )}
@@ -1000,11 +1000,11 @@ export default function Test() {
                   </p>
                 )}
                 {currentQuestion.groupSize > 1 && (
-                  <p className="text-blue-700 font-bold mb-2">
+                  <p className="text-green-700 font-bold mb-2">
                     Item {currentQuestion.groupIndex} of {currentQuestion.groupSize}
                   </p>
                 )}
-                <div className="w-full border-2 my-8 border-blue-300 shadow-xl shadow-blue-400">
+                <div className="w-full border-2 my-8 border-green-300 shadow-xl shadow-green-400">
                   {currentQuestion.answers && currentQuestion.answers.length > 0 && (
                     <div className="mt-4 border border-gray-200 rounded-lg overflow-hidden">
                       {[...currentQuestion.answers]
@@ -1028,7 +1028,7 @@ export default function Test() {
                                   checked={isUserAnswer}
                                   onChange={() => handleAnswerChange(currentQuestion.id, answer.id)}
                                   disabled={!!qResult || isViewResults}
-                                  className="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+                                  className="w-4 h-4 text-green-600 border-gray-300 focus:ring-green-500"
                                 />
                                 <span className="font-medium text-gray-700">{answer.letter}.</span>
                                 {answer.text && (
@@ -1091,7 +1091,7 @@ export default function Test() {
                                 )}
                                 {qResult?.rate_answer && (
                                   <div className="ml-4">
-                                    <span className="text-blue-600 font-semibold">
+                                    <span className="text-green-600 font-semibold">
                                       ({qResult.rate_answer[answer.id]}%)
                                     </span>
                                   </div>
@@ -1108,14 +1108,14 @@ export default function Test() {
                     {mode === 'timed' ? (
                       <button
                         onClick={() => saveAnswerTimeMode(currentQuestion.id)}
-                        className="mt-4 px-6 py-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
+                        className="mt-4 px-6 py-4 bg-green-600 text-white rounded hover:bg-green-700 transition duration-300"
                       >
                         Save
                       </button>
                     ) : (
                       <button
                         onClick={() => submitAnswer(currentQuestion.id)}
-                        className="mt-4 px-6 py-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
+                        className="mt-4 px-6 py-4 bg-green-600 text-white rounded hover:bg-green-700 transition duration-300"
                       >
                         Submit
                       </button>
@@ -1130,7 +1130,7 @@ export default function Test() {
             {/* Metadata */}
             {questionResult && !isViewResults && (
               <div className={separateView ? '' : 'mt-4'}>
-                <div className="mt-4 p-6 bg-gradient-to-r from-blue-50 to-gray-50 border border-blue-600 rounded-lg shadow-lg">
+                <div className="mt-4 p-6 bg-gradient-to-r from-green-50 to-gray-50 border border-green-600 rounded-lg shadow-lg">
                   <h2
                     className={`text-2xl font-bold mb-4 ${
                       questionResult?.status ? 'text-green-600' : 'text-red-600'
@@ -1138,23 +1138,23 @@ export default function Test() {
                   >
                     {questionResult?.status ? 'Correct' : 'Incorrect'}
                   </h2>
-                  <div className="flex divide-x divide-blue-600 gap-10">
-                    <div className="px-4 hover:bg-blue-100 transition-colors">
-                      <p className="font-semibold text-blue-600">Version</p>
+                  <div className="flex divide-x divide-green-600 gap-10">
+                    <div className="px-4 hover:bg-green-100 transition-colors">
+                      <p className="font-semibold text-green-600">Version</p>
                       <p className="text-sm text-gray-700">
                         {questionResult?.version ? questionResult.version.split('T')[0] : 'N/A'}
                       </p>
                     </div>
-                    <div className="px-4 hover:bg-blue-100 transition-colors">
-                      <p className="font-semibold text-blue-600">Subject Name</p>
+                    <div className="px-4 hover:bg-green-100 transition-colors">
+                      <p className="font-semibold text-green-600">Subject Name</p>
                       <p className="text-sm text-gray-700">{questionResult?.subject_name || 'N/A'}</p>
                     </div>
-                    <div className="px-4 hover:bg-blue-100 transition-colors">
-                      <p className="font-semibold text-blue-600">System Name</p>
+                    <div className="px-4 hover:bg-green-100 transition-colors">
+                      <p className="font-semibold text-green-600">System Name</p>
                       <p className="text-sm text-gray-700">{questionResult?.system_name || 'N/A'}</p>
                     </div>
-                    <div className="px-4 hover:bg-blue-100 transition-colors">
-                      <p className="font-semibold text-blue-600">Subtitle Name</p>
+                    <div className="px-4 hover:bg-green-100 transition-colors">
+                      <p className="font-semibold text-green-600">Subtitle Name</p>
                       <p className="text-sm text-gray-700">{questionResult?.subtitle_name || 'N/A'}</p>
                     </div>
                   </div>
@@ -1165,7 +1165,7 @@ export default function Test() {
 
             {questionResult &&isViewResults && currentQuestion &&  (
               <div className={separateView ? '' : 'mt-4'}>
-                <div className="mt-4 p-6 bg-gradient-to-r from-blue-50 to-gray-50 border border-blue-600 rounded-lg shadow-lg">
+                <div className="mt-4 p-6 bg-gradient-to-r from-green-50 to-gray-50 border border-green-600 rounded-lg shadow-lg">
                   <h2
                     className={`text-2xl font-bold mb-4 ${
                       questionResult?.status ? 'text-green-600' : 'text-red-600'
@@ -1173,27 +1173,27 @@ export default function Test() {
                   >
                     {questionResult?.status ? 'Correct' : 'Incorrect'}
                   </h2>
-                  <div className="flex divide-x divide-blue-600 gap-10">
-                    <div className="px-4 hover:bg-blue-100 transition-colors">
-                      <p className="font-semibold text-blue-600">Version</p>
+                  <div className="flex divide-x divide-green-600 gap-10">
+                    <div className="px-4 hover:bg-green-100 transition-colors">
+                      <p className="font-semibold text-green-600">Version</p>
                       <p className="text-sm text-gray-700">
                         {questionResult?.testDetails?.version || 'N/A'}
                       </p>
                     </div>
-                    <div className="px-4 hover:bg-blue-100 transition-colors">
-                      <p className="font-semibold text-blue-600">Subject Name</p>
+                    <div className="px-4 hover:bg-green-100 transition-colors">
+                      <p className="font-semibold text-green-600">Subject Name</p>
                       <p className="text-sm text-gray-700">
                         {questionResult?.testDetails?.subject_name || 'N/A'}
                       </p>
                     </div>
-                    <div className="px-4 hover:bg-blue-100 transition-colors">
-                      <p className="font-semibold text-blue-600">System Name</p>
+                    <div className="px-4 hover:bg-green-100 transition-colors">
+                      <p className="font-semibold text-green-600">System Name</p>
                       <p className="text-sm text-gray-700">
                         {questionResult?.testDetails?.system_name || 'N/A'}
                       </p>
                     </div>
-                    <div className="px-4 hover:bg-blue-100 transition-colors">
-                      <p className="font-semibold text-blue-600">Subtitle Name</p>
+                    <div className="px-4 hover:bg-green-100 transition-colors">
+                      <p className="font-semibold text-green-600">Subtitle Name</p>
                       <p className="text-sm text-gray-700">
                         {questionResult?.testDetails?.subtitle_name || 'N/A'}
                       </p>
@@ -1210,7 +1210,7 @@ export default function Test() {
             {/* Explanation for Timed Mode */}
             {mode === 'timed' && submittedQuestions[currentQuestion?.id] && questionResult && (
               <div className="p-3 border-t w-full">
-                <h3 className="font-bold text-2xl text-blue-600">Explanation:</h3>
+                <h3 className="font-bold text-2xl text-green-600">Explanation:</h3>
                 {questionResult?.image && (
                   <img
                     src={questionResult.image}
@@ -1239,7 +1239,7 @@ export default function Test() {
                           if (currentImage) {
                             return (
                               <u
-                                className="cursor-pointer text-blue-500 underline"
+                                className="cursor-pointer text-green-500 underline"
                                 onClick={() => openModal(currentImage)}
                               >
                                 {domToReact(domNode.children)}
@@ -1259,7 +1259,7 @@ export default function Test() {
             {/* Explanation for Non-Timed Mode */}
             {questionResult && !isViewResults && mode !== 'timed' && (
               <div className="p-3 border-t w-full">
-                <h3 className="font-bold text-2xl text-blue-600">Explanation:</h3>
+                <h3 className="font-bold text-2xl text-green-600">Explanation:</h3>
                 {questionResult?.image && (
                   <img
                     src={questionResult.image}
@@ -1288,7 +1288,7 @@ export default function Test() {
                           if (currentImage) {
                             return (
                               <u
-                                className="cursor-pointer text-blue-500 underline"
+                                className="cursor-pointer text-green-500 underline"
                                 onClick={() => openModal(currentImage)}
                               >
                                 {domToReact(domNode.children)}
@@ -1308,7 +1308,7 @@ export default function Test() {
             {/* Explanation for View Results */}
             {isViewResults && currentQuestion && results[currentQuestion.id] && (
               <div className="p-3 border-t w-full">
-                <h3 className="font-bold text-2xl text-blue-600">Explanation:</h3>
+                <h3 className="font-bold text-2xl text-green-600">Explanation:</h3>
                 {results[currentQuestion.id]?.image && (
                   <img
                     src={results[currentQuestion.id].image}
@@ -1337,7 +1337,7 @@ export default function Test() {
                           if (currentImage) {
                             return (
                               <u
-                                className="cursor-pointer text-blue-500 underline"
+                                className="cursor-pointer text-green-500 underline"
                                 onClick={() => openModal(currentImage)}
                               >
                                 {domToReact(domNode.children)}
@@ -1407,7 +1407,7 @@ export default function Test() {
               <Notes onClose={() => setActiveComponent(null)} />
               <button
                 onClick={() => setActiveComponent(null)}
-                className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+                className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
               >
                 Close
               </button>
@@ -1422,7 +1422,7 @@ export default function Test() {
               <Flashcards />
               <button
                 onClick={() => setActiveComponent(null)}
-                className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+                className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
               >
                 Close
               </button>
