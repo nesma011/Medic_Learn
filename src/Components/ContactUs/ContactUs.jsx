@@ -25,7 +25,7 @@ export default function ContactUs() {
         </p>
       </section>
 
-      <div className="max-w-lg mx-auto bg-gradient-to-r from-green-500 mb-20 to-purple-600 shadow-xl rounded-3xl p-8 mt-10 text-white relative overflow-hidden">
+      <div className="max-w-lg mx-auto bg-gradient-to-r from-green-800 mb-20 to-yellow-500 shadow-xl rounded-3xl p-8 mt-10 text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-white opacity-5 rounded-3xl"></div>
         <h2 className="text-3xl font-extrabold text-center mb-6">Get in Touch</h2>
         <div className="space-y-6 relative z-10">
