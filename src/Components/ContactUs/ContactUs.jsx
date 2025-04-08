@@ -18,14 +18,14 @@ export default function ContactUs() {
   return (
     <>
       <Navbar />
-      <section className='head flex flex-col justify-center items-center bg-green-900 py-40'>
+      <section className='head flex flex-col justify-center items-center bg-gray-600 py-40'>
         <h2 className='text-6xl text-white font-bold py-3'>Contact Us</h2>
         <p className='text-2xl text-white md:w-1/3 py-3 text-center'>
           Feel free to contact us anytime if you have any questions or needs by Whatsapp or email.
         </p>
       </section>
 
-      <div className="max-w-lg mx-auto bg-gradient-to-r from-green-800 mb-20 to-yellow-500 shadow-xl rounded-3xl p-8 mt-10 text-white relative overflow-hidden">
+      <div className="max-w-lg mx-auto bg-gradient-to-r from-green-800 mb-20 to-gray-500 shadow-xl rounded-3xl p-8 mt-10 text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-white opacity-5 rounded-3xl"></div>
         <h2 className="text-3xl font-extrabold text-center mb-6">Get in Touch</h2>
         <div className="space-y-6 relative z-10">
