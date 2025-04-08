@@ -7,7 +7,7 @@ import {
   FiRefreshCw,
   FiUserPlus,
 } from 'react-icons/fi';
-import logo from "../../../public/logo.png";
+import logo from "../../../public/logo.svg";
 import Darkmode from '../../Darkmode';
 import  { useReferFriendModal } from  "../../Context/ReferContext"; 
 

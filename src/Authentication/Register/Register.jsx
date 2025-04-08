@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import countryCodes from "../../../countrycodes.json"; 
 import React, { useContext, useState } from 'react';
 import { useFormik } from 'formik';
-import logo from "../../../public/logo.png"
+import logo from "../../../public/logo.svg"
 import axios from 'axios';
 import * as yup from 'yup';
 import { BallTriangle } from 'react-loader-spinner';

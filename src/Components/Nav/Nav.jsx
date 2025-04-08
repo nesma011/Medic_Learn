@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from "../../../public/logo.png";
+import logo from "../../../public/logo.svg";
 import { NavLink } from 'react-router-dom';
 
 export default function Nav({ hasSidebar = false }) {

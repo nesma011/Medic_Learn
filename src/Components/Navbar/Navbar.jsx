@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/logo.svg";
 import { userContext } from "../../Context/UserContext";
 
 export default function Navbar() {
